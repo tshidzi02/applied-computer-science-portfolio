@@ -15,3 +15,7 @@
 
 - Print the list after each pass
 - Trace steps manually
+## Java Algorithms — Debugging Tips
+
+- Print values during iteration
+- Trace the loop manually

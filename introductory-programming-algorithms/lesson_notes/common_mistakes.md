@@ -25,3 +25,12 @@
 
 - File name not matching class name
 - Forgetting semicolons
+## Java Conditionals — Common Mistakes
+
+- Missing curly braces
+- Forgetting to import Scanner
+- Using == instead of >= incorrectly
+## Java Loops — Common Mistakes
+
+- Infinite loops
+- Incorrect loop conditions

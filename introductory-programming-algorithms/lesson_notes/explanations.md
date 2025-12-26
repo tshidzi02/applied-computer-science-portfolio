@@ -31,3 +31,19 @@ into one interactive program.
 
 Java programs must be compiled before running.
 Execution starts in the main method.
+## Java Conditionals — if / else
+
+Java uses boolean expressions inside if statements.
+Curly braces define which statements belong to each condition.
+## Java Loops — for and while
+
+For-loops are used when repetition count is known.
+While-loops repeat until a condition becomes false.
+## Java Algorithms — Linear Search
+
+Linear search checks each element one by one.
+It is simple but not fast for large datasets.
+## Java Games — Applying Logic
+
+Games combine loops, conditionals, and user input
+into an interactive program.
