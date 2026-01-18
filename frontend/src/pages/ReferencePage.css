@@ -1,4 +1,35 @@
 /* =====================================================
+   HARD RESET TABLE SEMANTICS (OVERRIDES GLOBAL CSS)
+   ===================================================== */
+
+.reference-page table {
+  display: table !important;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reference-page thead {
+  display: table-header-group !important;
+}
+
+.reference-page tbody {
+  display: table-row-group !important;
+}
+
+.reference-page tr {
+  display: table-row !important;
+}
+
+.reference-page th {
+  display: table-cell !important;
+  font-weight: 600;
+}
+
+.reference-page td {
+  display: table-cell !important;
+}
+
+/* =====================================================
    REFERENCE PAGE – GLOBAL CONTAINER
    ===================================================== */
 

@@ -1,11 +1,10 @@
 import React from 'react';
 import '../styles/reference.css';
-
+import '../pages/ReferencePage.css';
 const ReferencePage = () => {
   return (
     <div className="reference-page">
       <h2>Recurring Income</h2>
-      <p>TABLE DEBUG TEST</p>
 
       <table>
         <thead>
