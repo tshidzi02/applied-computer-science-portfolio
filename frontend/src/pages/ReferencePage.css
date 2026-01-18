@@ -1,0 +1,157 @@
+/* =====================================================
+   REFERENCE PAGE – GLOBAL CONTAINER
+   ===================================================== */
+
+.reference-page {
+  padding: 32px 48px;
+  background-color: #ffffff; /* white is intentional */
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* =====================================================
+   SECTION WRAPPERS
+   ===================================================== */
+
+.reference-section {
+  margin-bottom: 48px;
+}
+
+/* Section headings (Recurring Income, etc.) */
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #61644f; /* muted olive-grey */
+}
+
+/* =====================================================
+   TABLE WRAPPER (OUTER BORDER LIKE EXCEL)
+   ===================================================== */
+
+.table-wrapper {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 12px 16px;
+  border: 1.5px solid #8e9fa3; /* calm blue-grey */
+}
+
+/* Variants for semantic meaning */
+.table-wrapper.income {
+  border-color: #61644f; /* olive-grey */
+}
+
+.table-wrapper.income-light {
+  border-color: #8e9fa3;
+}
+
+.table-wrapper.expense {
+  border-color: #6b5625; /* muted brown-olive */
+}
+
+.table-wrapper.expense-light {
+  border-color: #9a6f31; /* soft warm accent */
+}
+
+/* =====================================================
+   FORCE TRUE TABLE BEHAVIOUR (VERY IMPORTANT)
+   ===================================================== */
+
+.reference-page table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.reference-page thead {
+  display: table-header-group;
+}
+
+.reference-page tbody {
+  display: table-row-group;
+}
+
+.reference-page tr {
+  display: table-row;
+}
+
+.reference-page th,
+.reference-page td {
+  display: table-cell;
+  padding: 14px 16px;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 0.95rem;
+}
+
+/* =====================================================
+   TABLE HEADERS
+   ===================================================== */
+
+.reference-page th {
+  font-weight: 600;
+  color: #61644f; /* calm olive */
+  border-bottom: 2px solid #9a6f31; /* subtle structure */
+  background-color: #ffffff;
+}
+
+/* =====================================================
+   TABLE BODY CELLS
+   ===================================================== */
+
+.reference-page td {
+  color: #606b64; /* cool blue-grey */
+  border-bottom: 1px solid #e4e7e5;
+  background-color: #ffffff;
+}
+
+/* Remove border on last row */
+.reference-page tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* =====================================================
+   COLUMN WIDTH CONTROL (EXCEL-LIKE)
+   ===================================================== */
+
+.reference-page th:nth-child(1),
+.reference-page td:nth-child(1) {
+  width: 25%;
+}
+
+.reference-page th:nth-child(2),
+.reference-page td:nth-child(2) {
+  width: 30%;
+}
+
+.reference-page th:nth-child(3),
+.reference-page td:nth-child(3) {
+  width: 30%;
+}
+
+.reference-page th:nth-child(4),
+.reference-page td:nth-child(4) {
+  width: 15%;
+  text-align: right;
+}
+
+/* =====================================================
+   HOVER (SUBTLE, NOT FLASHY)
+   ===================================================== */
+
+.reference-page tbody tr:hover td {
+  background-color: #f6f7f6; /* barely visible */
+}
+
+/* =====================================================
+   RESPONSIVENESS (SCROLL INSTEAD OF BREAKING)
+   ===================================================== */
+
+@media (max-width: 900px) {
+  .table-wrapper {
+    overflow-x: auto;
+  }
+
+  .reference-page table {
+    min-width: 700px;
+  }
+}

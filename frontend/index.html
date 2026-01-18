@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- 
+This line tells the browser:
+"I am using modern HTML (HTML5)"
+-->
+
+<html lang="en">
+  <!-- 
+The <html> tag wraps the entire webpage.
+lang="en" tells the browser and screen readers that the language is English.
+-->
+
+  <head>
+    <!-- 
+    The <head> contains metadata:
+    information ABOUT the page, not visible content.
+    -->
+
+    <meta charset="UTF-8" />
+    <!-- 
+    This tells the browser which character encoding to use.
+    UTF-8 supports letters, symbols, emojis, etc.
+    -->
+
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- 
+    This sets the small icon shown in the browser tab.
+    -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 
+    This makes the website responsive.
+    It tells the browser to match the screen width of the device.
+    -->
+
+    <title>Budgeting Website</title>
+    <!-- 
+    This is the text shown in the browser tab.
+    We renamed it to match your project.
+    -->
+  </head>
+
+  <body>
+    <!-- 
+    The <body> contains visible content.
+    -->
+
+    <div id="root"></div>
+    <!-- 
+    VERY IMPORTANT:
+    React does NOT write HTML directly to the page.
+    Instead, React injects everything into this single div.
+    Think of this as an empty container.
+    -->
+
+    <script type="module" src="/src/main.jsx"></script>
+    <!-- 
+    This script starts your React app.
+    It loads main.jsx, which then loads App.jsx.
+    -->
+  </body>
+</html>

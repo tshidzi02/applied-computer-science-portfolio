@@ -1,0 +1,111 @@
+/* ===============================
+   TOP NAVIGATION CONTAINER
+   =============================== */
+
+.top-nav {
+  /* NO fill — transparent block */
+  background-color: transparent;
+
+  /* Thick calm border on all sides */
+  border: 3px solid #5e7179;
+
+  /* Keep it visible */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* ===============================
+   INNER LAYOUT
+   =============================== */
+
+.top-nav-inner {
+  display: flex;
+  align-items: center;
+
+  /* Space is filled by typography, not color */
+  justify-content: space-between;
+
+  padding: 18px 32px;
+}
+
+/* ===============================
+   LOGO
+   =============================== */
+
+.nav-logo {
+  height: 75px; /* Slightly larger so it fills space */
+  width: auto;
+}
+
+/* ===============================
+   NAV ITEMS CONTAINER
+   =============================== */
+
+.nav-right {
+  display: flex;
+  gap: 36px; /* Breathing room, not clutter */
+}
+
+/* ===============================
+   NAVIGATION TEXT
+   =============================== */
+
+.nav-item {
+  font-family: 'borsok', sans-serif;
+  font-size: 20px; /* Big enough to fill the bar */
+  font-weight: 700; /* Bold & confident */
+
+  color: #61644f; /* Calm dark olive-grey */
+  text-decoration: none;
+
+  transition: color 0.25s ease;
+}
+
+/* Hover — subtle guidance */
+.nav-item:hover {
+  color: #636325;
+}
+
+/* Active page — warm but restrained */
+.nav-item.active {
+  color: #9a6f31;
+}
+
+/* ===============================
+   NAV ITEM UNDERLINE SYSTEM
+   =============================== */
+
+.nav-item {
+  position: relative; /* Required for underline positioning */
+}
+
+/* The underline itself */
+.nav-item::after {
+  content: '';
+  position: absolute;
+
+  /* Start with no width */
+  width: 0;
+  height: 3px;
+
+  /* Underline color (calm, structural) */
+  background-color: #5e7179;
+
+  /* Position under text */
+  left: 0;
+  bottom: -6px;
+
+  /* Smooth, calm animation */
+  transition: width 0.3s ease;
+}
+
+/* On hover, gently reveal underline */
+.nav-item:hover::after {
+  width: 100%;
+}
+
+/* Active page — underline stays */
+.nav-item.active::after {
+  width: 100%;
+}

@@ -1,0 +1,75 @@
+/* ===============================
+   DASHBOARD CONTAINER
+   =============================== */
+
+.dashboard {
+  background-color: #8e9fa3; /* Calm, cool blue-grey */
+  min-height: 100vh;
+  padding: 32px;
+}
+
+/* ===============================
+   CARD GRID
+   =============================== */
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 28px;
+}
+
+/* ===============================
+   BASE CARD STYLE
+   =============================== */
+
+.card {
+  background-color: #8e9fa3; /* Same family as background */
+  border-radius: 18px;
+  padding: 28px;
+
+  /* Soft separation instead of harsh contrast */
+  box-shadow: 0 8px 20px rgba(94, 113, 121, 0.25);
+
+  /* Very subtle border for structure */
+  border: 1px solid #5e7179;
+}
+
+/* Card titles */
+.card h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #606b64; /* Soft, calming text */
+}
+
+/* Card values */
+.card p {
+  margin-top: 14px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* ===============================
+   SEMANTIC NUMBER COLORS
+   =============================== */
+
+/* Neutral balance */
+.card.balance p {
+  color: #5e7179;
+}
+
+/* Income: muted olive (calm positive) */
+.card.income p {
+  color: #636325;
+}
+
+/* Expenses: warm but restrained */
+.card.expense p {
+  color: #9a6f31;
+}
+
+/* Projected: thoughtful neutral */
+.card.projected p {
+  color: #606b64;
+}
